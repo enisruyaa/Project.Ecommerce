@@ -18,10 +18,10 @@ namespace Project.BLL.Manager.Concretes
             _oRep = oRep;
         }
 
-        public override void Add(Order item)
+        public override string Add(Order item)
         {
             //BL (Kdv , Gümrük , Kargo vs. işlemleri (Ücret İşlemleri))
-            base.Add(item);
+           return base.Add(item);
         }
     }
 }

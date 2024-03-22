@@ -12,7 +12,7 @@
 
         public decimal SubTotal { get { return Amount * UnitPrice; } }
 
-        public string ImagePath { get; set; },
+        public string ImagePath { get; set; }
 
         public int? CategoryID { get; set; }
 
