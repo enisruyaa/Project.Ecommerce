@@ -21,16 +21,18 @@ namespace Project.BLL.Manager.Abstracts
         List<T> GetModifieds();
 
         //Modify Commands
-        void Add(T item);
+        string Add(T item);
         Task AddAsync(T item);
-        Task AddRangeAsync(List<T> list);
-        void AddRange(List<T> list);
+        Task<string> AddRangeAsync(List<T> list);
+        string AddRange(List<T> list);
         void Delete(T item);
         void DeleteRange(List<T> list);
         Task UpdateAsync(T item);
         Task UpdateRangeAsync(List<T> list);
-        void Destroy(T item);
-        void DestroyRange(List<T> list);
+        string Destroy(T item);
+        string DestroyRange(List<T> list);
+
+        List<string> DestroyRangeWithText(List<T> list);
 
         //Linq Commands
         List<T> Where(Expression<Func<T, bool>> exp);
