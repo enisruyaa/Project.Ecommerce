@@ -18,10 +18,14 @@ namespace Project.ENTITIES.Models
 
         public decimal PriceOfOrder { get; set; } // Siparişin Toplam Tutarı (Sepetin onaylanan fiyatı)
 
+        public int? ShipperID { get; set; }
+
         // Relational Properties
 
         public virtual AppUser AppUser { get; set; }
 
         public virtual ICollection<OrderDetail> OrderDetails { get; set; }
+
+        public virtual Shipper Shipper { get; set; }
     }
 }
