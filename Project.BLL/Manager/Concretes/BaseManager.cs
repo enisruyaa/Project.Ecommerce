@@ -108,8 +108,14 @@ namespace Project.BLL.Manager.Concretes
         public string DestroyRange(List<T> list)
         {
             // Todo : Challange ödeve bakınız çünkü mevcut durumda istediğimiz şekilde çalışmayacaktır.
-            foreach(T item in list) return Destroy(item);
-            return "Silme işleminde bir sorunla karşılaşıldı lütfen veri durumunun pasif olduğundan emin olunuz";
+            StringBuilder result = new StringBuilder();
+            foreach (T item in list)
+            {
+                string message = Destroy(item);
+                result.AppendLine(message);
+            }
+
+            return result.ToString();
         }
 
         public async Task<T> FindAsync(int id)
