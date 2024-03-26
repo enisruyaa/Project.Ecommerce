@@ -12,7 +12,7 @@ using Project.DAL.ContextClasses;
 namespace Project.DAL.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20240319220015_Init1")]
+    [Migration("20240326184751_Init1")]
     partial class Init1
     {
         /// <inheritdoc />
@@ -61,7 +61,7 @@ namespace Project.DAL.Migrations
                         new
                         {
                             Id = 1,
-                            ConcurrencyStamp = "75b5d149-cea4-4c7d-a341-6729bde8cf74",
+                            ConcurrencyStamp = "9dc02cb0-6da5-491f-ac11-b967be0d7881",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
@@ -261,16 +261,16 @@ namespace Project.DAL.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "40672ab2-4bc2-449c-8a09-3cca96745e74",
-                            CreatedDate = new DateTime(2024, 3, 20, 1, 0, 15, 294, DateTimeKind.Local).AddTicks(7234),
+                            ConcurrencyStamp = "a4e8c304-8705-4ca1-a4f7-6038273d933b",
+                            CreatedDate = new DateTime(2024, 3, 26, 21, 47, 51, 412, DateTimeKind.Local).AddTicks(4204),
                             Email = "enisruya@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ENISRUYA@GMAIL.COM",
                             NormalizedUserName = "ENS123",
-                            PasswordHash = "AQAAAAIAAYagAAAAEADXb/BAaLauiKm9EE1aDgYTCSm7cqW6V5lsiwg5A4HcHX9l3EZ5j3Wn51RvzBEGNw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEJa2eFrDXH2m86MUSnCYe3EGo2sD95baPekAL9L2cdIkLRCdMYyMaNXhFuOeqvamwg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "0c07017b-1fb2-4bd8-be3e-c4fcae45aa3a",
+                            SecurityStamp = "c6ba81fe-c798-4f2f-91c1-b95f7351f788",
                             Status = 1,
                             TwoFactorEnabled = false,
                             UserName = "ens123"
@@ -343,81 +343,81 @@ namespace Project.DAL.Migrations
                         new
                         {
                             ID = 1,
-                            CategoryName = "Music",
-                            CreatedDate = new DateTime(2024, 3, 20, 1, 0, 15, 294, DateTimeKind.Local).AddTicks(5550),
-                            Description = "Teldeki koyun aut göze laudantium mutlu nihil ut değerli bilgiyasayarı.",
+                            CategoryName = "Toys",
+                            CreatedDate = new DateTime(2024, 3, 26, 21, 47, 51, 412, DateTimeKind.Local).AddTicks(2462),
+                            Description = "Velit gitti açılmadan in et voluptatem aliquam qui magni nostrum.",
                             Status = 1
                         },
                         new
                         {
                             ID = 2,
-                            CategoryName = "Electronics",
-                            CreatedDate = new DateTime(2024, 3, 20, 1, 0, 15, 294, DateTimeKind.Local).AddTicks(5807),
-                            Description = "Ama praesentium çıktılar nihil perferendis neque kulu ki gördüm totam.",
+                            CategoryName = "Grocery",
+                            CreatedDate = new DateTime(2024, 3, 26, 21, 47, 51, 412, DateTimeKind.Local).AddTicks(2719),
+                            Description = "Ve ducimus sıfat duyulmamış salladı sit sayfası magni ve aliquid.",
                             Status = 1
                         },
                         new
                         {
                             ID = 3,
-                            CategoryName = "Automotive",
-                            CreatedDate = new DateTime(2024, 3, 20, 1, 0, 15, 294, DateTimeKind.Local).AddTicks(5863),
-                            Description = "Camisi karşıdakine praesentium ad voluptatem perferendis veritatis lakin masanın ve.",
+                            CategoryName = "Electronics",
+                            CreatedDate = new DateTime(2024, 3, 26, 21, 47, 51, 412, DateTimeKind.Local).AddTicks(2772),
+                            Description = "Sarmal suscipit dicta tv dolor velit kapının koştum molestiae alias.",
                             Status = 1
                         },
                         new
                         {
                             ID = 4,
-                            CategoryName = "Kids",
-                            CreatedDate = new DateTime(2024, 3, 20, 1, 0, 15, 294, DateTimeKind.Local).AddTicks(5940),
-                            Description = "Ullam ea nisi çorba vel ışık eum voluptatem odit voluptatem.",
+                            CategoryName = "Baby",
+                            CreatedDate = new DateTime(2024, 3, 26, 21, 47, 51, 412, DateTimeKind.Local).AddTicks(2882),
+                            Description = "Voluptatem dolayı lakin türemiş aut aut ut nihil nostrum kutusu.",
                             Status = 1
                         },
                         new
                         {
                             ID = 5,
-                            CategoryName = "Health",
-                            CreatedDate = new DateTime(2024, 3, 20, 1, 0, 15, 294, DateTimeKind.Local).AddTicks(5988),
-                            Description = "Aliquam aut nisi perferendis quae lakin quia et yapacakmış için.",
+                            CategoryName = "Jewelery",
+                            CreatedDate = new DateTime(2024, 3, 26, 21, 47, 51, 412, DateTimeKind.Local).AddTicks(2934),
+                            Description = "Kalemi deleniti telefonu fugit voluptatem praesentium öyle ex adipisci aperiam.",
                             Status = 1
                         },
                         new
                         {
                             ID = 6,
-                            CategoryName = "Baby",
-                            CreatedDate = new DateTime(2024, 3, 20, 1, 0, 15, 294, DateTimeKind.Local).AddTicks(6036),
-                            Description = "Öyle sarmal çıktılar perferendis ekşili nisi mutlu qui ışık blanditiis.",
+                            CategoryName = "Outdoors",
+                            CreatedDate = new DateTime(2024, 3, 26, 21, 47, 51, 412, DateTimeKind.Local).AddTicks(2981),
+                            Description = "Masanın odit de corporis patlıcan tempora sıradanlıktan aut ut sunt.",
                             Status = 1
                         },
                         new
                         {
                             ID = 7,
-                            CategoryName = "Garden",
-                            CreatedDate = new DateTime(2024, 3, 20, 1, 0, 15, 294, DateTimeKind.Local).AddTicks(6081),
-                            Description = "Architecto açılmadan voluptatem tv dolorem dolor sandalye sıla doğru voluptatem.",
+                            CategoryName = "Jewelery",
+                            CreatedDate = new DateTime(2024, 3, 26, 21, 47, 51, 412, DateTimeKind.Local).AddTicks(3035),
+                            Description = "Değirmeni sit et voluptate mi salladı lakin oldular velit quam.",
                             Status = 1
                         },
                         new
                         {
                             ID = 8,
-                            CategoryName = "Baby",
-                            CreatedDate = new DateTime(2024, 3, 20, 1, 0, 15, 294, DateTimeKind.Local).AddTicks(6129),
-                            Description = "Perferendis okuma cesurca ötekinden praesentium dağılımı vel labore architecto praesentium.",
+                            CategoryName = "Industrial",
+                            CreatedDate = new DateTime(2024, 3, 26, 21, 47, 51, 412, DateTimeKind.Local).AddTicks(3095),
+                            Description = "Bahar doloremque ea gazete salladı dignissimos autem layıkıyla dolores sequi.",
                             Status = 1
                         },
                         new
                         {
                             ID = 9,
-                            CategoryName = "Grocery",
-                            CreatedDate = new DateTime(2024, 3, 20, 1, 0, 15, 294, DateTimeKind.Local).AddTicks(6191),
-                            Description = "Sinema ut nemo reprehenderit alias laboriosam voluptas quasi mi blanditiis.",
+                            CategoryName = "Movies",
+                            CreatedDate = new DateTime(2024, 3, 26, 21, 47, 51, 412, DateTimeKind.Local).AddTicks(3145),
+                            Description = "Sunt alias esse bundan masaya layıkıyla çakıl lakin iure çünkü.",
                             Status = 1
                         },
                         new
                         {
                             ID = 10,
-                            CategoryName = "Automotive",
-                            CreatedDate = new DateTime(2024, 3, 20, 1, 0, 15, 294, DateTimeKind.Local).AddTicks(6243),
-                            Description = "Laudantium esse architecto ut voluptatem bundan ekşili dolorem laudantium dolores.",
+                            CategoryName = "Shoes",
+                            CreatedDate = new DateTime(2024, 3, 26, 21, 47, 51, 412, DateTimeKind.Local).AddTicks(3193),
+                            Description = "Uzattı sit quia batarya corporis quia perferendis beğendim magnam karşıdakine.",
                             Status = 1
                         });
                 });
@@ -453,6 +453,9 @@ namespace Project.DAL.Migrations
                     b.Property<decimal>("PriceOfOrder")
                         .HasColumnType("money");
 
+                    b.Property<int?>("ShipperID")
+                        .HasColumnType("int");
+
                     b.Property<string>("ShippingAddress")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -463,6 +466,8 @@ namespace Project.DAL.Migrations
                     b.HasKey("ID");
 
                     b.HasIndex("AppUserID");
+
+                    b.HasIndex("ShipperID");
 
                     b.ToTable("Orders");
                 });
@@ -548,112 +553,141 @@ namespace Project.DAL.Migrations
                         {
                             ID = 1,
                             CategoryID = 1,
-                            CreatedDate = new DateTime(2024, 3, 20, 1, 0, 15, 294, DateTimeKind.Local).AddTicks(6330),
+                            CreatedDate = new DateTime(2024, 3, 26, 21, 47, 51, 412, DateTimeKind.Local).AddTicks(3284),
                             ImagePath = "http://lorempixel.com/640/480/nightlife",
-                            ProductName = "Handmade Cotton Salad",
+                            ProductName = "Handcrafted Fresh Table",
                             Status = 1,
-                            UnitPrice = 742.87m,
+                            UnitPrice = 316.44m,
                             UnitsInStock = 100
                         },
                         new
                         {
                             ID = 2,
                             CategoryID = 2,
-                            CreatedDate = new DateTime(2024, 3, 20, 1, 0, 15, 294, DateTimeKind.Local).AddTicks(6541),
+                            CreatedDate = new DateTime(2024, 3, 26, 21, 47, 51, 412, DateTimeKind.Local).AddTicks(3514),
                             ImagePath = "http://lorempixel.com/640/480/nightlife",
-                            ProductName = "Awesome Rubber Table",
+                            ProductName = "Incredible Fresh Shoes",
                             Status = 1,
-                            UnitPrice = 716.81m,
+                            UnitPrice = 297.72m,
                             UnitsInStock = 100
                         },
                         new
                         {
                             ID = 3,
                             CategoryID = 3,
-                            CreatedDate = new DateTime(2024, 3, 20, 1, 0, 15, 294, DateTimeKind.Local).AddTicks(6601),
+                            CreatedDate = new DateTime(2024, 3, 26, 21, 47, 51, 412, DateTimeKind.Local).AddTicks(3574),
                             ImagePath = "http://lorempixel.com/640/480/nightlife",
-                            ProductName = "Fantastic Rubber Pants",
+                            ProductName = "Intelligent Cotton Shoes",
                             Status = 1,
-                            UnitPrice = 755.18m,
+                            UnitPrice = 692.43m,
                             UnitsInStock = 100
                         },
                         new
                         {
                             ID = 4,
                             CategoryID = 4,
-                            CreatedDate = new DateTime(2024, 3, 20, 1, 0, 15, 294, DateTimeKind.Local).AddTicks(6651),
+                            CreatedDate = new DateTime(2024, 3, 26, 21, 47, 51, 412, DateTimeKind.Local).AddTicks(3627),
                             ImagePath = "http://lorempixel.com/640/480/nightlife",
-                            ProductName = "Fantastic Soft Chicken",
+                            ProductName = "Intelligent Soft Car",
                             Status = 1,
-                            UnitPrice = 985.17m,
+                            UnitPrice = 550.85m,
                             UnitsInStock = 100
                         },
                         new
                         {
                             ID = 5,
                             CategoryID = 5,
-                            CreatedDate = new DateTime(2024, 3, 20, 1, 0, 15, 294, DateTimeKind.Local).AddTicks(6700),
+                            CreatedDate = new DateTime(2024, 3, 26, 21, 47, 51, 412, DateTimeKind.Local).AddTicks(3677),
                             ImagePath = "http://lorempixel.com/640/480/nightlife",
-                            ProductName = "Licensed Metal Cheese",
+                            ProductName = "Small Metal Mouse",
                             Status = 1,
-                            UnitPrice = 537.38m,
+                            UnitPrice = 880.85m,
                             UnitsInStock = 100
                         },
                         new
                         {
                             ID = 6,
                             CategoryID = 6,
-                            CreatedDate = new DateTime(2024, 3, 20, 1, 0, 15, 294, DateTimeKind.Local).AddTicks(6752),
+                            CreatedDate = new DateTime(2024, 3, 26, 21, 47, 51, 412, DateTimeKind.Local).AddTicks(3728),
                             ImagePath = "http://lorempixel.com/640/480/nightlife",
-                            ProductName = "Incredible Wooden Shirt",
+                            ProductName = "Refined Frozen Keyboard",
                             Status = 1,
-                            UnitPrice = 303.21m,
+                            UnitPrice = 249.51m,
                             UnitsInStock = 100
                         },
                         new
                         {
                             ID = 7,
                             CategoryID = 7,
-                            CreatedDate = new DateTime(2024, 3, 20, 1, 0, 15, 294, DateTimeKind.Local).AddTicks(6840),
+                            CreatedDate = new DateTime(2024, 3, 26, 21, 47, 51, 412, DateTimeKind.Local).AddTicks(3804),
                             ImagePath = "http://lorempixel.com/640/480/nightlife",
-                            ProductName = "Generic Fresh Computer",
+                            ProductName = "Tasty Frozen Shoes",
                             Status = 1,
-                            UnitPrice = 735.69m,
+                            UnitPrice = 24.01m,
                             UnitsInStock = 100
                         },
                         new
                         {
                             ID = 8,
                             CategoryID = 8,
-                            CreatedDate = new DateTime(2024, 3, 20, 1, 0, 15, 294, DateTimeKind.Local).AddTicks(6891),
+                            CreatedDate = new DateTime(2024, 3, 26, 21, 47, 51, 412, DateTimeKind.Local).AddTicks(3854),
                             ImagePath = "http://lorempixel.com/640/480/nightlife",
-                            ProductName = "Fantastic Concrete Shirt",
+                            ProductName = "Generic Steel Fish",
                             Status = 1,
-                            UnitPrice = 372.26m,
+                            UnitPrice = 696.55m,
                             UnitsInStock = 100
                         },
                         new
                         {
                             ID = 9,
                             CategoryID = 9,
-                            CreatedDate = new DateTime(2024, 3, 20, 1, 0, 15, 294, DateTimeKind.Local).AddTicks(6940),
+                            CreatedDate = new DateTime(2024, 3, 26, 21, 47, 51, 412, DateTimeKind.Local).AddTicks(3904),
                             ImagePath = "http://lorempixel.com/640/480/nightlife",
-                            ProductName = "Gorgeous Fresh Keyboard",
+                            ProductName = "Licensed Cotton Shirt",
                             Status = 1,
-                            UnitPrice = 708.76m,
+                            UnitPrice = 436.89m,
                             UnitsInStock = 100
                         },
                         new
                         {
                             ID = 10,
                             CategoryID = 10,
-                            CreatedDate = new DateTime(2024, 3, 20, 1, 0, 15, 294, DateTimeKind.Local).AddTicks(6992),
+                            CreatedDate = new DateTime(2024, 3, 26, 21, 47, 51, 412, DateTimeKind.Local).AddTicks(3956),
                             ImagePath = "http://lorempixel.com/640/480/nightlife",
-                            ProductName = "Sleek Concrete Salad",
+                            ProductName = "Tasty Granite Pizza",
                             Status = 1,
-                            UnitPrice = 651.41m,
+                            UnitPrice = 796.36m,
                             UnitsInStock = 100
                         });
+                });
+
+            modelBuilder.Entity("Project.ENTITIES.Models.Shipper", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<string>("CompanyName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Shippers");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
@@ -724,7 +758,13 @@ namespace Project.DAL.Migrations
                         .WithMany("Orders")
                         .HasForeignKey("AppUserID");
 
+                    b.HasOne("Project.ENTITIES.Models.Shipper", "Shipper")
+                        .WithMany("Orders")
+                        .HasForeignKey("ShipperID");
+
                     b.Navigation("AppUser");
+
+                    b.Navigation("Shipper");
                 });
 
             modelBuilder.Entity("Project.ENTITIES.Models.OrderDetail", b =>
@@ -776,6 +816,11 @@ namespace Project.DAL.Migrations
             modelBuilder.Entity("Project.ENTITIES.Models.Product", b =>
                 {
                     b.Navigation("OrderDetails");
+                });
+
+            modelBuilder.Entity("Project.ENTITIES.Models.Shipper", b =>
+                {
+                    b.Navigation("Orders");
                 });
 #pragma warning restore 612, 618
         }
