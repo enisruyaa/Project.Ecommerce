@@ -10,7 +10,7 @@ namespace Project.COMMON.Tools
 {
     public static class MailService
     {
-        public static void Send(string reciver , string passwprd = "" , string body = "Test Mesajıdır" , string subject = "Email Testi" , string sender = "yzl3169@gmail.com")
+        public static void Send(string reciver , string passwprd = "oktczfjzfohickzn", string body = "Test Mesajıdır" , string subject = "Email Testi" , string sender = "yzlm3170@gmail.com")
         {
             MailAddress senderEmail = new(sender);
             MailAddress receiverEmail = new(sender);
