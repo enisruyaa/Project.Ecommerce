@@ -10,28 +10,30 @@ namespace Project.COMMON.Tools
 {
     public static class MailService
     {
-        public static void Send(string reciver , string passwprd = "oktczfjzfohickzn", string body = "Test Mesajıdır" , string subject = "Email Testi" , string sender = "yzlm3170@gmail.com")
+        public static void Send(string receiver, string password = "oktczfjzfohickzn", string body = "Test mesajıdır", string subject = "Email testi", string sender = "yzlm3170@gmail.com")
         {
             MailAddress senderEmail = new(sender);
-            MailAddress receiverEmail = new(sender);
+            MailAddress receiverEmail = new(receiver);
 
             // Bizim Email İşlemlerim SMTP'ye Göre Yapılır.
             // Kullandığımız gmail hesabımızın başka uygulamalar tarafından mesaj gönderme sistemini açmamız gerekiyor.
 
             SmtpClient smtp = new()
             {
-                Host = "smt.gmail.com",
+                Host = "smtp.gmail.com",
                 Port = 587,
                 EnableSsl = true,
                 DeliveryMethod = SmtpDeliveryMethod.Network,
                 UseDefaultCredentials = false,
-                Credentials = new NetworkCredential(senderEmail.Address, passwprd) 
+                Credentials = new NetworkCredential(senderEmail.Address, password)
+
             };
+
 
             using (MailMessage message = new MailMessage(senderEmail, receiverEmail)
             {
                 Subject = subject,
-                Body = body
+                Body = body,
             })
             {
                 smtp.Send(message);

@@ -55,7 +55,7 @@ namespace Project.CoreMVC.Controllers
             {
                 #region RolKontrolIslemleri
                 IdentityRole<int> appRole = await _roleManager.FindByNameAsync("Member");
-                if (appRole != null) await _roleManager.CreateAsync(new() { Name = "Member" });
+                if (appRole == null) await _roleManager.CreateAsync(new() { Name = "Member" });
                 await _userManager.AddToRoleAsync(appUser, "Member");
                 #endregion
 
