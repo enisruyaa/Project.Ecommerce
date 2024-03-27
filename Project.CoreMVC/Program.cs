@@ -41,6 +41,10 @@ app.UseAuthentication(); // Rol tanýmlamasý olmdan görev tanýmlamasý olmaz.
 app.UseAuthorization();
 
 app.MapControllerRoute(
+    name: "Admin",
+    pattern: "{area}/{controller=Home}/{Action=Index}/{id?}");
+
+app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Register}/{id?}");
 
