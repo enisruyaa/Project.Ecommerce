@@ -5,6 +5,8 @@ WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddHttpClient(); // Eðer bir API consume edilecekse HTTP protoklünde client tarafýnda olduðumuzu middleware'e bildirmeliyiz 
+
 builder.Services.AddDistributedMemoryCache(); // Eðer Session Kompleks yapýlar içiin Extension meyodu ekleme durumuna maruz kalýrsa bu kod projemizin saðlýklý çalýþmasý için gereklidir.
 
 builder.Services.AddSession(x =>

@@ -1,5 +1,7 @@
 ﻿@model ShoppingPageVM
 
+<h1 class="text-danger"> @TempData["Message"] </h1>
+
 <div class="row">
     <div class="col-md-3">
 
@@ -80,3 +82,12 @@
         </div>
     </div>
 </div>
+
+
+
+ @section Sepet
+{
+
+    <li> <a asp-controller="Shopping" asp-action="CartPage"><i class="icon-shopping-cart"></i>Cart</a> </li>
+
+} 

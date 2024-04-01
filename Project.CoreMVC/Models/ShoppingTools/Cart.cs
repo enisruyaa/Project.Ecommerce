@@ -8,6 +8,8 @@ namespace Project.CoreMVC.Models.ShoppingTools
         [JsonProperty("_myCart")]
         Dictionary<int,CartItem> _myCart;
 
+        // Dictinoary tipini sözlüğe benzetebilirsiniz. Sözlükte kelimeler vardır karşılarında da onların anlamları vardır...
+
         public Cart()
         {
             _myCart = new Dictionary<int,CartItem>();   
