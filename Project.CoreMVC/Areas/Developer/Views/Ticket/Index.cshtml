@@ -1,0 +1,40 @@
+﻿@model List<Ticket>
+
+<section class="panel">
+    <header class="panel-heading">
+        Ticketlarımız
+    </header>
+    <div class="panel-body">
+        <div class="adv-table">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Ticket ID</th>
+                        <th>Ticket Başlığı</th>
+                        <th>Ticket Konusu</th>
+                        <th>Ticket Açıklaması</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+
+                    @foreach (Ticket item in Model)
+                    {
+                        <tr class="gradeX">
+
+                            <td> @item.ID </td>
+                            <td> @item.Title </td>
+                            <td> @item.Subject </td>
+                            <td> @item.Description </td>
+                        </tr>
+                    }
+
+
+
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>

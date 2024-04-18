@@ -23,6 +23,16 @@ namespace Project.DAL.Extentions
 
             modelBuilder.Entity<IdentityRole<int>>().HasData(appRole);
 
+            IdentityRole<int> appRoleDev = new()
+            {
+                Id = 2,
+                Name = "Developer",
+                NormalizedName = "",
+                ConcurrencyStamp = Guid.NewGuid().ToString()
+            };
+
+            modelBuilder.Entity<IdentityRole<int>>().HasData(appRoleDev);
+
             PasswordHasher<AppUser> passwordHasher = new();
 
             AppUser user = new()
@@ -39,10 +49,30 @@ namespace Project.DAL.Extentions
 
             modelBuilder.Entity<AppUser>().HasData(user);
 
+            AppUser user2 = new()
+            {
+                Id = 2,
+                UserName = "cgr1234",
+                Email = "cagri2@gmail.com",
+                NormalizedEmail = "CAGRI2@GMAIL.COM",
+                NormalizedUserName = "CGR1234",
+                EmailConfirmed = true,
+                SecurityStamp = Guid.NewGuid().ToString(),
+                PasswordHash = passwordHasher.HashPassword(null, "cgr1234")
+            };
+
+            modelBuilder.Entity<AppUser>().HasData(user2);
+
             modelBuilder.Entity<IdentityUserRole<int>>().HasData(new IdentityUserRole<int>
             {
                 RoleId = appRole.Id,
                 UserId = user.Id,
+            });
+
+            modelBuilder.Entity<IdentityUserRole<int>>().HasData(new IdentityUserRole<int>
+            {
+                RoleId = appRoleDev.Id,
+                UserId = user2.Id,
             });
         }
     }

@@ -1,0 +1,46 @@
+﻿@model List<Ticket>
+
+<h1>
+    <span class="text-danger">@TempData["Message"]</span>
+</h1>
+
+<section class="panel">
+    <header class="panel-heading">
+        Ticketlarımız
+    </header>
+    <div class="panel-body">
+        <div class="adv-table">
+            <table   class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Ticket ID</th>
+                        <th>Ticket Başlığı</th>
+                        <th>Ticket Konusu</th>
+                        <th>Ticket Açıklaması</th>
+                        <th class="hidden-phone">Sil</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                   
+                   @foreach (Ticket item in Model)
+                    {
+                        <tr class ="gradeX">
+
+                            <td> @item.ID </td>
+                            <td> @item.Title </td>
+                            <td> @item.Subject </td>
+                            <td> @item.Description </td>
+                            <td class="center hidden-phone"><a asp-action="DeleteTicket" asp-route-id="@item.ID" class="btn btn-danger">Sil</a></td>
+                        </tr>
+                    }
+
+
+
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,17 @@
+﻿@model Subject
+
+
+<form asp-controller="Subject" asp-action="CreateSubject" method="post" class="p-3 w-75 m-auto">
+
+    <div class="mb-3">
+        <label> Ticket Başlığı Giriniz </label>
+        <input asp-for="SubjectName" class="form-control" />
+    </div>
+
+    <br />
+
+    <div class="mb-3">
+        <button class="btn btn-primary"> Ticket Ekle </button>
+    </div>
+
+</form>
