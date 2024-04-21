@@ -24,6 +24,8 @@ builder.Services.AddRepServices();
 
 builder.Services.AddManagerServices();
 
+builder.Services.AddMapperService();
+
 
 WebApplication app = builder.Build();
 

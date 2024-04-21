@@ -31,6 +31,8 @@ namespace Project.DAL.ContextClasses
             builder.ApplyConfiguration(new ShipperConfiguration());
             builder.ApplyConfiguration(new SubjectConfiguration());
             builder.ApplyConfiguration(new TicketConfiguration());
+            builder.ApplyConfiguration(new CompaignConfiguration());
+            builder.ApplyConfiguration(new ProductCompaignConfiguration());
             CategoryDataSeedExtensions.SeedCategories(builder);
             ProductDataSeedExtensions.SeedProducts(builder);
             UserRoleDataSeedExtensions.SeedUsers(builder);
@@ -53,6 +55,10 @@ namespace Project.DAL.ContextClasses
         public DbSet<Subject> Subjects { get; set; }
 
         public DbSet<Ticket> Tickets { get; set; }
+
+        public DbSet<Compaign> Compaigns { get; set; }
+
+        public DbSet<ProductCompaign> ProductCompaigns { get; set; }
 
     }
 }

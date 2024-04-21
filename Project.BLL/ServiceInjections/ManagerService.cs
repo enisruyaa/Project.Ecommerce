@@ -22,7 +22,7 @@ namespace Project.BLL.ServiceInjections
             services.AddScoped<IProductManager, ProductManager>();
             services.AddScoped<IProfileManager, ProfileManager>();
             services.AddScoped<ISubjectManager, SubjectManager>();
-            services.AddScoped<ITicketManager, TicketManager>(); 
+            services.AddScoped<ITicketManager, TicketManager>();
             
             return services;
         }

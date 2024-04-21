@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.ENTITIES", "Project.ENTITIES\Project.ENTITIES.csproj", "{1B1B35C5-160A-4E98-9092-E4833CB5C433}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.ENTITIES", "Project.ENTITIES\Project.ENTITIES.csproj", "{1B1B35C5-160A-4E98-9092-E4833CB5C433}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.DAL", "Project.DAL\Project.DAL.csproj", "{BAD7C51B-5943-43C7-BFAA-5EA86FF9BC30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.DAL", "Project.DAL\Project.DAL.csproj", "{BAD7C51B-5943-43C7-BFAA-5EA86FF9BC30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.CONF", "Project.CONF\Project.CONF.csproj", "{316EEE28-5CDC-416D-A240-1537F342F684}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.CONF", "Project.CONF\Project.CONF.csproj", "{316EEE28-5CDC-416D-A240-1537F342F684}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.COMMON", "Project.COMMON\Project.COMMON.csproj", "{E5B78FAD-C83E-4D25-9344-6B0C290F2539}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.COMMON", "Project.COMMON\Project.COMMON.csproj", "{E5B78FAD-C83E-4D25-9344-6B0C290F2539}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.BLL", "Project.BLL\Project.BLL.csproj", "{81D2DD7A-D0AF-4DC3-BE3E-28F01FE232AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.BLL", "Project.BLL\Project.BLL.csproj", "{81D2DD7A-D0AF-4DC3-BE3E-28F01FE232AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.CoreMVC", "Project.CoreMVC\Project.CoreMVC.csproj", "{34219BE1-93E8-4024-B820-C1C9E02407C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.CoreMVC", "Project.CoreMVC\Project.CoreMVC.csproj", "{34219BE1-93E8-4024-B820-C1C9E02407C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.VM", "Project.VM\Project.VM.csproj", "{3D8241A8-236C-4F31-96A6-A8A7F47E257C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{34219BE1-93E8-4024-B820-C1C9E02407C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34219BE1-93E8-4024-B820-C1C9E02407C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34219BE1-93E8-4024-B820-C1C9E02407C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D8241A8-236C-4F31-96A6-A8A7F47E257C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D8241A8-236C-4F31-96A6-A8A7F47E257C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D8241A8-236C-4F31-96A6-A8A7F47E257C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D8241A8-236C-4F31-96A6-A8A7F47E257C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
