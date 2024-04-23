@@ -39,10 +39,16 @@ namespace Project.BLL.Manager.Concretes
             return "Ekleme Başarılıdır";
         }
 
-        public async Task AddAsync(T item)
+        public async Task<string> AddAsync(T item)
         {
             SaatEkle(item);
-            await _iRep.AddAsync(item);
+            if (item.CreatedDate == DateTime.Now.AddHours(3))
+            {
+                await _iRep.AddAsync(item);
+
+                return "Ekleme Başarılıdır";
+            }
+            return "Saat Düzenlenemedi";
         }
 
         bool ElemanKontrol(List<T> list)

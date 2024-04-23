@@ -33,10 +33,9 @@ namespace Project.CoreMVC.Areas.Admin.Controllers
             return View(tPVM);
         }
         [HttpPost]
-        public async Task<IActionResult> CreateTicket(Ticket model)
+        public async Task<IActionResult> CreateTicket(Ticket ticket)
         {
-            await _ticketManager.AddAsync(model);
-            TempData["Message"] = "Ticket Başarılı Bir Şekilde Eklenmiştir";
+            TempData["Message"] = await _ticketManager.AddAsync(ticket); 
             return RedirectToAction("Index");
         }
 

@@ -22,7 +22,7 @@ namespace Project.BLL.Manager.Abstracts
 
         //Modify Commands
         string Add(T item);
-        Task AddAsync(T item);
+        Task<string> AddAsync(T item);
         Task<string> AddRangeAsync(List<T> list);
         string AddRange(List<T> list);
         void Delete(T item);
