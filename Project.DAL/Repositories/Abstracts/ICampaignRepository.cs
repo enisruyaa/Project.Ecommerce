@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Project.DAL.Repositories.Abstracts
 {
-    public interface ICompaignRepository : IRepository<Compaign>
+    public interface ICampaignRepository : IRepository<Campaign>
     {
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project.ENTITIES.Models
 {
-    public class Compaign : BaseEntity
+    public class Campaign : BaseEntity
     {
         public int StartMount { get; set; }
 

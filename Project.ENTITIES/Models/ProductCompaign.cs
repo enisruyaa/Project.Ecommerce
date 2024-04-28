@@ -8,13 +8,13 @@ namespace Project.ENTITIES.Models
 {
     public class ProductCompaign : BaseEntity
     {
-        public int CompaignID { get; set; }
+        public int CampaignID { get; set; }
 
         public int ProductID { get; set; }
 
         // Relational Properties
 
-        public virtual Compaign Compaign { get; set; }
+        public virtual Campaign Campaign { get; set; }
 
         public virtual Product Product { get; set; }
     }

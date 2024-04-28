@@ -38,7 +38,7 @@ namespace Project.BLL.ServiceInjections
             services.AddScoped<IProfileRepository, ProfileRepository>();
             services.AddScoped<ISubjectRepository, SubjectRepository>();
             services.AddScoped<ITicketRepository, TicketRepository>();
-            services.AddScoped<ICompaignRepository, CompaignRepository>();
+            services.AddScoped<ICampaignRepository, CampaignRepository>();
             services.AddScoped<IProductCompaignRepository, ProductCompaignRepository>();
 
             return services;

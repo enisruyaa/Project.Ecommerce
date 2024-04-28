@@ -56,7 +56,7 @@ namespace Project.DAL.ContextClasses
 
         public DbSet<Ticket> Tickets { get; set; }
 
-        public DbSet<Compaign> Compaigns { get; set; }
+        public DbSet<Campaign> Compaigns { get; set; }
 
         public DbSet<ProductCompaign> ProductCompaigns { get; set; }
 

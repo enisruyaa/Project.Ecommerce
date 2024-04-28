@@ -23,6 +23,7 @@ namespace Project.BLL.ServiceInjections
             services.AddScoped<IProfileManager, ProfileManager>();
             services.AddScoped<ISubjectManager, SubjectManager>();
             services.AddScoped<ITicketManager, TicketManager>();
+            services.AddScoped<ICampaignManager, CampaignManager>();
             
             return services;
         }

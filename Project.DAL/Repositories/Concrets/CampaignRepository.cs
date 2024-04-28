@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace Project.DAL.Repositories.Concrets
 {
-    public class CompaignRepository : BaseRepository<Compaign> , ICompaignRepository
+    public class CampaignRepository : BaseRepository<Campaign> , ICampaignRepository
     {
-        public CompaignRepository(MyContext db) : base(db)
+        public CampaignRepository(MyContext db) : base(db)
         {
 
         }

@@ -17,7 +17,7 @@ namespace Project.CONF.Configurations
             builder.HasKey(x => new
             {
                 x.ProductID,
-                x.CompaignID
+                x.CampaignID
             });
         }
     }

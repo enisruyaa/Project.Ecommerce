@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Project.CONF.Configurations
 {
-    public class CompaignConfiguration : BaseConfiguration<Compaign>
+    public class CompaignConfiguration : BaseConfiguration<Campaign>
     {
-        public override void Configure(EntityTypeBuilder<Compaign> builder)
+        public override void Configure(EntityTypeBuilder<Campaign> builder)
         {
             base.Configure(builder);
         }
